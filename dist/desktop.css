@@ -3082,6 +3082,20 @@ body {
   font-size: 11px;
   text-shadow: 0px 0px 1px #282828;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #707070;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #535353;
+}
+::-webkit-scrollbar-corner {
+  background: #707070;
+}
 .workspace {
   position: relative;
   width: 100%;
