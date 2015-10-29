@@ -2956,6 +2956,15 @@ input[type='radio'] {
   background: none;
   box-shadow: none;
 }
+.input[type='range'],
+input[type='range'] {
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  height: 1px;
+  vertical-align: middle;
+}
 .panelHeaderBgColor {
   background: #343434;
   background: -webkit-gradient(linear, center top, center bottom, from(#3b3b3b), to(#373737));
@@ -3087,14 +3096,17 @@ body {
   height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #707070;
+  background: #787878;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: #535353;
 }
+::-webkit-scrollbar-thumb:hover {
+  background: #464646;
+}
 ::-webkit-scrollbar-corner {
-  background: #707070;
+  background: #6a6a6a;
 }
 .workspace {
   position: relative;
