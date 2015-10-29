@@ -55,10 +55,12 @@
                           <br/><br/>
                           <input readonly="readonly" value="readonly">
                           <br/><br/>
-                          <label class="label">checkbox</label><input type="checkbox">
+                          <label class="label">checkbox</label><input type="checkbox" checked>&nbsp;<input type="checkbox">
                           <br/><br/>
-                          <label class="label">option1</label><input type="radio" name="radio"><br/>
+                          <label class="label">option1</label><input type="radio" name="radio" checked><br/>
                           <label class="label">option2</label><input type="radio" name="radio">
+                          <br/><br/>
+                          <label class="label">range</label><input type="range" min=0 max=100 value=50>
                       </div>
                   </div>
                   <div class="tab" style="float: left; margin-left: 20px; min-width: 300px; height: 400px;">
@@ -68,7 +70,7 @@
                           <div class="tab-item active">tab1</div>
                       </div>
                       <div class="content">
-                          <div class="tab-content active" style="padding: 20px; overflow: scroll;">
+                          <div class="tab-content active" style="padding: 20px; overflow-y: scroll;">
                               <div class="accordion">
                                   <div class="title"><i class="caret right icon"></i>title here</div>
                                   <div class="content">
