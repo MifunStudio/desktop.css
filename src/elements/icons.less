@@ -1,373 +1,17 @@
 /*******************************
-         Theme Overrides
-*******************************/
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-/**
- * Remove default margin.
- */
-body {
-  margin: 0;
-}
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-/**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
- */
-[hidden],
-template {
-  display: none;
-}
-/* Links
-   ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-a {
-  background: transparent;
-}
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-a:active,
-a:hover {
-  outline: 0;
-}
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
- */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-b,
-strong {
-  font-weight: bold;
-}
-/**
- * Address styling not present in Safari and Chrome.
- */
-dfn {
-  font-style: italic;
-}
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-/**
- * Address styling not present in IE 8/9.
- */
-mark {
-  background: #ff0;
-  color: #000;
-}
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9/10.
- */
-img {
-  border: 0;
-}
-/**
- * Correct overflow not hidden in IE 9/10/11.
- */
-svg:not(:root) {
-  overflow: hidden;
-}
-/* Grouping content
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari.
- */
-figure {
-  margin: 1em 40px;
-}
-/**
- * Address differences between Firefox and other browsers.
- */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-/**
- * Contain overflow in all browsers.
- */
-pre {
-  overflow: auto;
-}
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-/* Forms
-   ========================================================================== */
-/**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
- */
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-  margin: 0;
-  /* 3 */
-}
-/**
- * Address `overflow` set to `hidden` in IE 8/9/10/11.
- */
-button {
-  overflow: visible;
-}
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
- * Correct `select` style inheritance in Firefox.
- */
-button,
-select {
-  text-transform: none;
-}
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
-}
-/**
- * Re-set default cursor for disabled elements.
- */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-input {
-  line-height: normal;
-}
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-/**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
- *    (include `-moz` to future-proof).
- */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-  box-sizing: content-box;
-}
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-/**
- * Define consistent border, margin, and padding.
- */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-/**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-/**
- * Remove default vertical scrollbar in IE 8/9/10/11.
- */
-textarea {
-  overflow: auto;
-}
-/**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
- */
-optgroup {
-  font-weight: bold;
-}
-/* Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-td,
-th {
-  padding: 0;
-}
-/*******************************
     Icon from Semantic-UI
 *******************************/
+
+@fontFaceBase: "./fonts";
+
 @font-face {
   font-family: 'Icons';
-  src: url("fonts/icons.eot");
-  src: url("fonts/icons.eot?#iefix") format('embedded-opentype'), url("fonts/icons.woff2") format('woff2'), url("fonts/icons.woff") format('woff'), url("fonts/icons.ttf") format('truetype'), url("fonts/icons.svg#icons") format('svg');
+  src: url("@{fontFaceBase}/icons.eot");
+  src: url("@{fontFaceBase}/icons.eot?#iefix") format('embedded-opentype'),
+       url("@{fontFaceBase}/icons.woff2") format('woff2'),
+       url("@{fontFaceBase}/icons.woff") format('woff'),
+       url("@{fontFaceBase}/icons.ttf") format('truetype'),
+       url("@{fontFaceBase}/icons.svg#icons") format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -390,46 +34,54 @@ i.icon {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 i.icon:before {
   background: none !important;
 }
+
+
 /*******************************
              Types
 *******************************/
+
+
 /*--------------
     Loading
 ---------------*/
+
 i.icon.loading {
   height: 1em;
   line-height: 1;
   -webkit-animation: icon-loading 2s linear infinite;
-  animation: icon-loading 2s linear infinite;
+          animation: icon-loading 2s linear infinite;
 }
 @-webkit-keyframes icon-loading {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 @keyframes icon-loading {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
+
+
 /*******************************
              States
 *******************************/
+
 i.icon.hover {
   opacity: 1 !important;
 }
@@ -442,31 +94,40 @@ i.emphasized.icon {
 i.disabled.icon {
   opacity: 0.45 !important;
 }
+
+
 /*******************************
            Variations
 *******************************/
+
+
 /*-------------------
         Fitted
 --------------------*/
+
 i.fitted.icon {
   width: auto;
   margin: 0em;
 }
+
 /*-------------------
          Link
 --------------------*/
+
 i.link.icon {
   cursor: pointer;
   opacity: 0.8;
   -webkit-transition: opacity 0.1s ease;
-  transition: opacity 0.1s ease;
+          transition: opacity 0.1s ease;
 }
 i.link.icon:hover {
   opacity: 1 !important;
 }
+
 /*-------------------
       Circular
 --------------------*/
+
 i.circular.icon {
   border-radius: 500em !important;
   line-height: 1 !important;
@@ -479,39 +140,45 @@ i.circular.inverted.icon {
   border: none;
   box-shadow: none;
 }
+
 /*-------------------
       Flipped
 --------------------*/
+
 i.flipped.icon,
 i.horizontally.flipped.icon {
   -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
 }
 i.vertically.flipped.icon {
   -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
-  transform: scale(1, -1);
+      -ms-transform: scale(1, -1);
+          transform: scale(1, -1);
 }
+
 /*-------------------
       Rotated
 --------------------*/
+
 i.rotated.icon,
 i.right.rotated.icon,
 i.clockwise.rotated.icon {
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 i.left.rotated.icon,
 i.counterclockwise.rotated.icon {
   -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
+
 /*-------------------
       Bordered
 --------------------*/
+
 i.bordered.icon {
   line-height: 1;
   vertical-align: baseline;
@@ -524,9 +191,12 @@ i.bordered.inverted.icon {
   border: none;
   box-shadow: none;
 }
+
 /*-------------------
       Inverted
 --------------------*/
+
+
 /* Inverted Shapes */
 i.inverted.bordered.icon,
 i.inverted.circular.icon {
@@ -536,9 +206,12 @@ i.inverted.circular.icon {
 i.inverted.icon {
   color: #FFFFFF;
 }
+
 /*-------------------
        Colors
 --------------------*/
+
+
 /* Red */
 i.red.icon {
   color: #DB2828 !important;
@@ -551,6 +224,7 @@ i.inverted.circular.red.icon {
   background-color: #DB2828 !important;
   color: #FFFFFF !important;
 }
+
 /* Orange */
 i.orange.icon {
   color: #F2711C !important;
@@ -563,6 +237,7 @@ i.inverted.circular.orange.icon {
   background-color: #F2711C !important;
   color: #FFFFFF !important;
 }
+
 /* Yellow */
 i.yellow.icon {
   color: #FBBD08 !important;
@@ -575,6 +250,7 @@ i.inverted.circular.yellow.icon {
   background-color: #FBBD08 !important;
   color: #FFFFFF !important;
 }
+
 /* Olive */
 i.olive.icon {
   color: #B5CC18 !important;
@@ -587,6 +263,7 @@ i.inverted.circular.olive.icon {
   background-color: #B5CC18 !important;
   color: #FFFFFF !important;
 }
+
 /* Green */
 i.green.icon {
   color: #21BA45 !important;
@@ -599,6 +276,7 @@ i.inverted.circular.green.icon {
   background-color: #21BA45 !important;
   color: #FFFFFF !important;
 }
+
 /* Teal */
 i.teal.icon {
   color: #00B5AD !important;
@@ -611,6 +289,7 @@ i.inverted.circular.teal.icon {
   background-color: #00B5AD !important;
   color: #FFFFFF !important;
 }
+
 /* Blue */
 i.blue.icon {
   color: #2185D0 !important;
@@ -623,6 +302,7 @@ i.inverted.circular.blue.icon {
   background-color: #2185D0 !important;
   color: #FFFFFF !important;
 }
+
 /* Violet */
 i.violet.icon {
   color: #6435C9 !important;
@@ -635,6 +315,7 @@ i.inverted.circular.violet.icon {
   background-color: #6435C9 !important;
   color: #FFFFFF !important;
 }
+
 /* Purple */
 i.purple.icon {
   color: #A333C8 !important;
@@ -647,6 +328,7 @@ i.inverted.circular.purple.icon {
   background-color: #A333C8 !important;
   color: #FFFFFF !important;
 }
+
 /* Pink */
 i.pink.icon {
   color: #E03997 !important;
@@ -659,6 +341,7 @@ i.inverted.circular.pink.icon {
   background-color: #E03997 !important;
   color: #FFFFFF !important;
 }
+
 /* Brown */
 i.brown.icon {
   color: #A5673F !important;
@@ -671,6 +354,7 @@ i.inverted.circular.brown.icon {
   background-color: #A5673F !important;
   color: #FFFFFF !important;
 }
+
 /* Grey */
 i.grey.icon {
   color: #767676 !important;
@@ -683,6 +367,7 @@ i.inverted.circular.grey.icon {
   background-color: #767676 !important;
   color: #FFFFFF !important;
 }
+
 /* Black */
 i.black.icon {
   color: #1B1C1D !important;
@@ -695,9 +380,11 @@ i.inverted.circular.black.icon {
   background-color: #1B1C1D !important;
   color: #FFFFFF !important;
 }
+
 /*-------------------
         Sizes
 --------------------*/
+
 i.mini.icon,
 i.mini.icons {
   line-height: 1;
@@ -741,9 +428,12 @@ i.massive.icons {
   vertical-align: middle;
   font-size: 8em;
 }
+
+
 /*******************************
             Groups
 *******************************/
+
 i.icons {
   display: inline-block;
   position: relative;
@@ -754,8 +444,8 @@ i.icons .icon {
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
   margin: 0em;
   margin: 0;
 }
@@ -765,10 +455,11 @@ i.icons .icon:first-child {
   height: auto;
   vertical-align: top;
   -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
+      -ms-transform: none;
+          transform: none;
   margin-right: 0.25rem;
 }
+
 /* Corner Icon */
 i.icons .corner.icon {
   top: auto;
@@ -776,8 +467,8 @@ i.icons .corner.icon {
   right: 0;
   bottom: 0;
   -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
+      -ms-transform: none;
+          transform: none;
   font-size: 0.45em;
   text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
 }
@@ -788,6 +479,8 @@ i.icons .inverted.corner.icon {
  * Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  * License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
+
+
 /*******************************
 
 Semantic-UI integration of font-awesome :
@@ -810,9 +503,14 @@ Icons that only have one style 'outline', 'square' etc do not require this class
 for instance `lemon icon` not `lemon outline icon` since there is only one lemon
 
 *******************************/
+
+
+
 /*******************************
             Icons
 *******************************/
+
+
 /* Web Content */
 i.icon.search:before {
   content: "\f002";
@@ -967,6 +665,7 @@ i.icon.paint.brush:before {
 i.icon.heartbeat:before {
   content: "\f21e";
 }
+
 /* User Actions */
 i.icon.download:before {
   content: "\f019";
@@ -1127,6 +826,7 @@ i.icon.add.user:before {
 i.icon.remove.user:before {
   content: "\f235";
 }
+
 /* Messages */
 i.icon.help.circle:before {
   content: "\f059";
@@ -1155,6 +855,7 @@ i.icon.announcement:before {
 i.icon.birthday:before {
   content: "\f1fd";
 }
+
 /* Users */
 i.icon.users:before {
   content: "\f0c0";
@@ -1177,6 +878,7 @@ i.icon.student:before {
 i.icon.spy:before {
   content: "\f21b";
 }
+
 /* Gender & Sexuality */
 i.icon.female:before {
   content: "\f182";
@@ -1220,6 +922,7 @@ i.icon.other.gender.horizontal:before {
 i.icon.neuter:before {
   content: "\f22c";
 }
+
 /* View Adjustment */
 i.icon.grid.layout:before {
   content: "\f00a";
@@ -1248,6 +951,7 @@ i.icon.maximize:before {
 i.icon.crop:before {
   content: "\f125";
 }
+
 /* Literal Objects */
 i.icon.cocktail:before {
   content: "\f000";
@@ -1354,6 +1058,7 @@ i.icon.calculator:before {
 i.icon.diamond:before {
   content: "\f219";
 }
+
 /* Shapes */
 i.icon.crosshairs:before {
   content: "\f05b";
@@ -1397,6 +1102,7 @@ i.icon.square.outline:before {
 i.icon.square:before {
   content: "\f0c8";
 }
+
 /* Item Selection */
 i.icon.checkmark:before {
   content: "\f00c";
@@ -1461,6 +1167,7 @@ i.icon.toggle.off:before {
 i.icon.toggle.on:before {
   content: "\f205";
 }
+
 /* Media */
 i.icon.film:before {
   content: "\f008";
@@ -1489,6 +1196,7 @@ i.icon.pie.chart:before {
 i.icon.line.chart:before {
   content: "\f201";
 }
+
 /* Pointers */
 i.icon.arrow.circle.outline.down:before {
   content: "\f01a";
@@ -1622,6 +1330,7 @@ i.icon.arrow.circle.outline.left:before {
 i.icon.toggle.left:before {
   content: "\f191";
 }
+
 /* Computer */
 i.icon.power:before {
   content: "\f011";
@@ -1656,6 +1365,7 @@ i.icon.keyboard:before {
 i.icon.plug:before {
   content: "\f1e6";
 }
+
 /* File System */
 i.icon.folder:before {
   content: "\f07b";
@@ -1714,6 +1424,7 @@ i.icon.file.video.outline:before {
 i.icon.file.code.outline:before {
   content: "\f1c9";
 }
+
 /* Technologies */
 i.icon.barcode:before {
   content: "\f02a";
@@ -1745,6 +1456,7 @@ i.icon.database:before {
 i.icon.server:before {
   content: "\f233";
 }
+
 /* Rating */
 i.icon.heart:before {
   content: "\f004";
@@ -1785,6 +1497,7 @@ i.icon.thumbs.up:before {
 i.icon.thumbs.down:before {
   content: "\f165";
 }
+
 /* Audio */
 i.icon.music:before {
   content: "\f001";
@@ -1846,6 +1559,7 @@ i.icon.video.play:before {
 i.icon.closed.captioning:before {
   content: "\f20a";
 }
+
 /* Map, Locations, & Transportation */
 i.icon.marker:before {
   content: "\f041";
@@ -1925,6 +1639,7 @@ i.icon.train:before {
 i.icon.subway:before {
   content: "\f239";
 }
+
 /* Tables */
 i.icon.table:before {
   content: "\f0ce";
@@ -1959,6 +1674,7 @@ i.icon.sort.numeric.ascending:before {
 i.icon.sort.numeric.descending:before {
   content: "\f163";
 }
+
 /* Text Editor */
 i.icon.font:before {
   content: "\f031";
@@ -2044,6 +1760,7 @@ i.icon.header:before {
 i.icon.paragraph:before {
   content: "\f1dd";
 }
+
 /* Currency */
 i.icon.euro:before {
   content: "\f153";
@@ -2072,6 +1789,7 @@ i.icon.lira:before {
 i.icon.shekel:before {
   content: "\f20b";
 }
+
 /* Payment Options */
 i.icon.paypal:before {
   content: "\f1ed";
@@ -2386,9 +2104,12 @@ i.icon.viacoin:before {
 i.icon.medium:before {
   content: "\f23a";
 }
+
+
 /*******************************
             Aliases
 *******************************/
+
 i.icon.like:before {
   content: "\f004";
 }
@@ -2852,276 +2573,3 @@ i.icon.pinterest.official {
 i.icon.bed:before {
   content: "\f236";
 }
-.label {
-  display: inline-block;
-  margin: 0;
-  background: transparent;
-  border: 1px solid transparent;
-  color: #b7b7b7;
-  padding: 2px 5px 2px 5px;
-  min-width: 40px;
-  outline: none;
-  text-shadow: 0px 0px 1px #282828;
-  text-align: center;
-}
-.button,
-button {
-  display: inline-block;
-  margin: 0;
-  background: #606060;
-  background: -webkit-gradient(linear, center top, center bottom, from(#747474), to(#606060));
-  border: 1px solid #282828;
-  border-radius: 2px;
-  color: #d7d7d7;
-  padding: 2px 5px 2px 5px;
-  min-width: 40px;
-  outline: none;
-  text-shadow: 0px 0px 1px #282828;
-}
-.button:hover,
-button:hover {
-  color: #ffffff;
-}
-.button:active,
-button:active {
-  background: #535353;
-}
-.select,
-select {
-  display: inline-block;
-  margin: 0;
-  background: #606060;
-  background: -webkit-gradient(linear, center top, center bottom, from(#747474), to(#606060));
-  border: 1px solid #282828;
-  border-radius: 2px;
-  color: #d7d7d7;
-  padding: 2px 5px 2px 5px;
-  min-width: 40px;
-  outline: none;
-  text-shadow: 0px 0px 1px #282828;
-}
-.select:hover,
-select:hover {
-  color: #ffffff;
-}
-.select:active,
-select:active {
-  background: #535353;
-}
-.input,
-input {
-  display: inline-block;
-  margin: 0;
-  background: #343434;
-  border: 1px solid #202020;
-  border-radius: 1px;
-  color: #b7b7b7;
-  padding: 2px 5px 2px 5px;
-  min-width: 40px;
-  outline: none;
-  text-shadow: 0px 0px 1px #282828;
-  box-shadow: #282828 0px 0px 2px inset;
-}
-.input:focus,
-input:focus {
-  color: #fffde6;
-  background: #3a3a3a;
-  box-shadow: #282828 0px 0px 1px inset;
-}
-.input[disabled],
-input[disabled] {
-  color: #777777;
-  border: 1px solid #282828;
-  box-shadow: #383838 0px 0px 1px inset;
-}
-.input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-inner-spin-button {
-  cursor: pointer;
-  display: block;
-  position: relative;
-  right: -4px;
-  opacity: 1;
-}
-.input[type='checkbox'],
-input[type='checkbox'] {
-  border: 1px solid #202020;
-  box-shadow: none;
-  width: 14px;
-  height: 14px;
-  vertical-align: text-bottom;
-}
-.input[type='radio'],
-input[type='radio'] {
-  border: none;
-  background: none;
-  box-shadow: none;
-}
-.panelHeaderBgColor {
-  background: #343434;
-  background: -webkit-gradient(linear, center top, center bottom, from(#3b3b3b), to(#373737));
-}
-.panel {
-  display: flex;
-  flex-flow: column;
-  border: 1px solid #282828;
-}
-.panel > .header {
-  background: #343434;
-  background: -webkit-gradient(linear, center top, center bottom, from(#3b3b3b), to(#373737));
-  padding: 3px 6px 3px 6px;
-  color: #b7b7b7;
-  border-top: 1px solid #4a4a4a;
-  border-bottom: 1px solid #282828;
-  text-shadow: 0px 0px 1px #282828;
-}
-.panel > .content {
-  flex: 1;
-  position: relative;
-  background: #464646;
-}
-.tab {
-  display: flex;
-  flex-flow: column;
-  border: 1px solid #282828;
-}
-.tab > .header {
-  background: #343434;
-  background: -webkit-gradient(linear, center top, center bottom, from(#3b3b3b), to(#373737));
-  padding: 3px 6px 3px 6px;
-  color: #b7b7b7;
-  border-top: 1px solid #4a4a4a;
-  border-bottom: 1px solid #282828;
-  text-shadow: 0px 0px 1px #282828;
-}
-.tab > .content {
-  flex: 1;
-  position: relative;
-  background: #464646;
-}
-.tab > .header {
-  padding: 0;
-}
-.tab > .header::after {
-  display: block;
-  clear: both;
-  content: " ";
-}
-.tab > .header > .tab-item {
-  cursor: pointer;
-  float: left;
-  position: relative;
-  display: inline-block;
-  padding: 3px 6px 3px 6px;
-  border-bottom: 1px solid transparent;
-  border-right: 1px solid #282828;
-  margin-bottom: -1px;
-  margin-top: -1px;
-}
-.tab > .header > .tab-item::before {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 1px;
-  content: " ";
-  background: transparent;
-}
-.tab > .header > .tab-item:hover {
-  background: #535353;
-  border-bottom: 1px solid #282828;
-}
-.tab > .header > .tab-item:hover::before {
-  background: #707070;
-}
-.tab > .header > .tab-item.active {
-  background: #606060;
-  background: -webkit-gradient(linear, center top, center bottom, from(#696969), to(#606060));
-  color: #fffde6;
-  border-bottom: 1px solid #606060;
-}
-.tab > .header > .tab-item.active::before {
-  background: #808080;
-}
-.tab > .content > .tab-content {
-  box-sizing: border-box;
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #606060;
-}
-.tab > .content > .tab-content.active {
-  display: block;
-}
-html,
-body {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 11px;
-}
-.workspace {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-flow: column;
-  overflow: hidden;
-  background: #282828;
-  color: #fffde6;
-  font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 12px;
-}
-.workspace > .menus {
-  padding: 0 0 0 10px;
-  background: #343434;
-  border-bottom: 1px solid #282828;
-}
-.workspace > .menus > .menu {
-  display: inline-block;
-  background: #343434;
-  border-left: 1px solid #343434;
-  border-right: 1px solid #343434;
-  font-size: 12px;
-  color: #b7b7b7;
-  padding: 3px 12px 3px 12px;
-}
-.workspace > .menus > .menu:hover {
-  color: #fffde6;
-  background: #282828;
-  cursor: pointer;
-  border-left: 1px solid #202020;
-  border-right: 1px solid #202020;
-}
-.workspace > .toolbar {
-  background: #606060;
-  border-top: 1px solid #707070;
-  border-bottom: 1px solid #282828;
-  padding: 5px;
-}
-.workspace > .toolbar > div,
-.workspace > .toolbar > button,
-.workspace > .toolbar > select {
-  margin-left: 5px;
-}
-.workspace > .toolbar > .label:hover,
-.workspace > .toolbar > .label.active {
-  cursor: pointer;
-  background: #464646;
-  border: 1px solid #202020;
-  color: #b7b7b7;
-  padding: 2px 5px 2px 5px;
-  border-radius: 1px;
-}
-.workspace > .content {
-  position: relative;
-  flex: 1;
-  border-top: 1px solid #707070;
-  box-sizing: border-box;
-}
-
-/*# sourceMappingURL=desktop.css.map */
