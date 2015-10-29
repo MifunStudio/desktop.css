@@ -1,0 +1,29 @@
+{
+  "name": "desktop.css",
+  "version": "0.0.1",
+  "description": "a desktop style library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MifunStudio/desktop.css.git"
+  },
+  "keywords": [
+    "css",
+    "desktop"
+  ],
+  "author": "zzm2q",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MifunStudio/desktop.css/issues"
+  },
+  "homepage": "https://github.com/MifunStudio/desktop.css#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3",
+    "gulp-sourcemaps": "^1.6.0",
+    "less": "^2.5.3"
+  }
+}

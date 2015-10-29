@@ -1,0 +1,23 @@
+@import "../vars";
+
+.button, button {
+    display: inline-block;
+    margin: 0;
+    background: @sectionBgColor5;
+    background: @sectionGradientBgColor2;
+    border: 1px solid @borderColor1;
+    border-radius: @borderRadius2;
+    color: @textColor1_5;
+    padding: 2px 5px 2px 5px;
+    min-width: 40px;
+    outline: none;
+    text-shadow: @textShadow;
+
+    &:hover {
+        color: @textColor0;
+    }
+
+    &:active {
+        background: @sectionBgColor4;
+    }
+}

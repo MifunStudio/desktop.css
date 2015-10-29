@@ -1,0 +1,80 @@
+@import "../vars";
+@import "panel";
+
+@tabContentColor: @sectionBgColor5;
+
+.tab {
+    .panel;
+
+    > .header {
+        padding: 0;
+
+        &::after {
+            display: block;
+            clear: both;
+            content: " ";
+        }
+
+        > .tab-item {
+            cursor: pointer;
+            float: left;
+            position: relative;
+            display: inline-block;
+            padding: @panelHeaderPadding;
+            border-bottom: 1px solid transparent;
+            border-right: 1px solid @borderColor1;
+            margin-bottom: -1px;
+            margin-top: -1px;
+
+            &::before {
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 1px;
+                content: " ";
+                background: transparent;
+            }
+
+            &:hover {
+                background: @sectionBgColor4;
+                border-bottom: 1px solid @borderColor1;
+
+                &::before {
+                    background: @borderColor4;
+                }
+            }
+
+            &.active {
+                background: @tabContentColor;
+                background: @sectionGradientBgColor3;
+                color: @textColor1;
+                border-bottom: 1px solid @tabContentColor;
+
+                &::before {
+                    background: @borderColor5;
+                }
+            }
+
+        }
+    }
+
+    > .content {
+
+        > .tab-content {
+            box-sizing: border-box;
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: @tabContentColor;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+}

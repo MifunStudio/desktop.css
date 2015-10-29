@@ -1,0 +1,30 @@
+@import "../vars";
+
+.panelHeaderBgColor {
+    background: @sectionBgColor2;
+    background: @sectionGradientBgColor;
+}
+
+@panelHeaderPadding: 3px 6px 3px 6px;
+@panelContentBgColor: @sectionBgColor3;
+
+.panel {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid @borderColor1;
+
+    .header {
+        .panelHeaderBgColor;
+        padding: @panelHeaderPadding;
+        color: @textColor2;
+        border-top: 1px solid @borderColor3;
+        border-bottom: 1px solid @borderColor1;
+        text-shadow: @textShadow;
+    }
+
+    .content {
+        flex: 1;
+        position: relative;
+        background: @panelContentBgColor;
+    }
+}

@@ -1,0 +1,50 @@
+.input, input {
+    display: inline-block;
+    margin: 0;
+    background: @sectionBgColor2;
+    border: 1px solid @borderColor0;
+    border-radius: @borderRadius1;
+    color: @textColor2;
+    padding: 2px 5px 2px 5px;
+    min-width: 40px;
+    outline: none;
+    text-shadow: @textShadow;
+    box-shadow: @borderColor1 0px 0px 2px inset;
+
+    &:focus {
+        color: @textColor1;
+        background: @sectionBgColor2_5;
+        box-shadow: @borderColor1 0px 0px 1px inset;
+    }
+
+    &[disabled] {
+        color: @textColor4;
+        border: 1px solid @borderColor1;
+        box-shadow: @borderColor2 0px 0px 1px inset;
+    }
+}
+
+.input[type='number'], input[type='number'] {
+
+    &::-webkit-inner-spin-button {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        right: -4px;
+        opacity: 1;
+    }
+}
+
+.input[type='checkbox'], input[type='checkbox'] {
+    border: 1px solid @borderColor0;
+    box-shadow: none;
+    width: 14px;
+    height: 14px;
+    vertical-align: text-bottom;
+}
+
+.input[type='radio'], input[type='radio'] {
+    border: none;
+    background: none;
+    box-shadow: none;
+}
