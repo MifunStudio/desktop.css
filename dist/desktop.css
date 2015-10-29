@@ -2965,6 +2965,50 @@ input[type='range'] {
   height: 1px;
   vertical-align: middle;
 }
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.menu {
+  box-shadow: 0 0 15px #282828;
+  border: 1px solid #383838;
+  border-radius: 2px;
+  min-width: 150px;
+  padding: 3px 0px 3px 0px;
+  background: #606060;
+  color: #d7d7d7;
+}
+.menu > .item {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  cursor: default;
+  padding: 5px 7px 5px 32px;
+}
+.menu > .item:hover {
+  background: #535353;
+}
+.menu > .item:active {
+  background: #464646;
+}
+.menu > .item .icon {
+  position: absolute;
+  left: 10px;
+  margin-top: 1px;
+}
+.menu > .divider {
+  margin: 3px 0px 3px 0px;
+  border-top: 1px solid #4a4a4a;
+  border-bottom: 1px solid #808080;
+}
 .panelHeaderBgColor {
   background: #343434;
   background: -webkit-gradient(linear, center top, center bottom, from(#3b3b3b), to(#373737));
@@ -3120,12 +3164,12 @@ body {
   font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 12px;
 }
-.workspace > .menus {
+.workspace > .commands {
   padding: 0 0 0 10px;
   background: #343434;
   border-bottom: 1px solid #282828;
 }
-.workspace > .menus > .menu {
+.workspace > .commands > .item {
   display: inline-block;
   background: #343434;
   border-left: 1px solid #343434;
@@ -3134,7 +3178,7 @@ body {
   color: #b7b7b7;
   padding: 3px 12px 3px 12px;
 }
-.workspace > .menus > .menu:hover {
+.workspace > .commands > .item:hover {
   color: #fffde6;
   background: #282828;
   cursor: pointer;
