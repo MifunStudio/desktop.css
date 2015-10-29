@@ -1,0 +1,23 @@
+@import "../vars";
+
+.accordion {
+
+    color: @textColor1_5;
+
+    > .title {
+        padding: 0;
+        margin: 0;
+        padding: 3px 0px 3px 0px;
+        cursor: pointer;
+    }
+
+    > .content {
+        display: none;
+        padding: 0;
+        margin: 0;
+
+        &.active {
+            display: block;
+        }
+    }
+}

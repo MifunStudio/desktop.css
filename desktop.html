@@ -7,17 +7,18 @@
   </head>
   <body>
       <div class="workspace">
-          <div class="menus">
-              <div class="menu">File</div>
-              <div class="menu">Edit</div>
-              <div class="menu">Find</div>
-              <div class="menu">Window</div>
-              <div class="menu">Help</div>
+          <div class="commands">
+              <div class="item">File</div>
+              <div class="item">Edit</div>
+              <div class="item">Find</div>
+              <div class="item">Window</div>
+              <div class="item">Help</div>
           </div>
           <div class="toolbar">
               <button>Basic Button</button>
               <button>Mini</button>
               <button>中文</button>
+              <button><i class="zoom icon"></i></button>
               <select>
                   <option>Choose...</option>
                   <option>Option A</option>
@@ -26,57 +27,117 @@
                   <option>Option A</option>
               </select>
               <div class="label">Label</div>
-
+              <div class="label"><i class="zoom icon"></i></div>
               <div class="label active">Actived Label in Toolbar</div>
           </div>
           <div class="content" style="background: #707070; padding: 20px;">
-                  <div class="panel" style="float: left; height: 400px;">
-                      <div class="header">panel title</div>
-                      <div class="content" style="padding: 20px;">
-                          <div class="label">Label</div>
-                          <br/><br/>
-                          <button>Basic Button</button>
-                          <button>Mini</button>
-                          <button>中文</button>
-                          <br/><br/>
-                          <select>
-                              <option>Choose...</option>
-                              <option>Option A</option>
-                              <option>Option A</option>
-                              <option>Option A</option>
-                              <option>Option A</option>
-                          </select>
-                          <br/><br/>
-                          <input>
-                          <br/><br/>
-                          <input type="number" value="1">
-                          <br/><br/>
-                          <input disabled="disabled" value="disabled">
-                          <br/><br/>
-                          <input readonly="readonly" value="readonly">
-                          <br/><br/>
-                          <label class="label">checkbox</label><input type="checkbox">
-                          <br/><br/>
-                          <label class="label">option1</label><input type="radio" name="radio"><br/>
-                          <label class="label">option2</label><input type="radio" name="radio">
+              <div class="panel" style="float: left; height: 400px;">
+                  <div class="header">panel title</div>
+                  <div class="content" style="padding: 20px;">
+                      <div class="label">Label</div>
+                      <br/><br/>
+                      <button>Basic Button</button>
+                      <button>Mini</button>
+                      <button>中文</button>
+                      <br/><br/>
+                      <select>
+                          <option>Choose...</option>
+                          <option>Option A</option>
+                          <option>Option A</option>
+                          <option>Option A</option>
+                          <option>Option A</option>
+                      </select>
+                      <br/><br/>
+                      <input>
+                      <br/><br/>
+                      <input type="number" value="1">
+                      <br/><br/>
+                      <input disabled="disabled" value="disabled">
+                      <br/><br/>
+                      <input readonly="readonly" value="readonly">
+                      <br/><br/>
+                      <label class="label">checkbox</label><input type="checkbox" checked>&nbsp;<input type="checkbox">
+                      <br/><br/>
+                      <label class="label">option1</label><input type="radio" name="radio" checked><br/>
+                      <label class="label">option2</label><input type="radio" name="radio">
+                      <br/><br/>
+                      <label class="label">range</label><input type="range" min=0 max=100 value=50>
+                  </div>
+              </div>
+              <div class="tab" style="float: left; margin-left: 20px; min-width: 300px; height: 400px;">
+                  <div class="header">
+                      <div class="tab-item">tab1</div>
+                      <div class="tab-item">tab1</div>
+                      <div class="tab-item active">tab1</div>
+                  </div>
+                  <div class="content">
+                      <div class="tab-content active" style="padding: 20px; overflow-y: scroll;">
+                          <div class="accordion">
+                              <div class="title"><i class="caret right icon"></i>title here</div>
+                              <div class="content">
+                                  <p>The last two years have been rough on Samsung,
+                                      which makes some of the most popular smartphones
+                                      in the world but hasn't managed lately to scoop up
+                                      the same profits as competitor Apple, whose
+                                      iPhones remain the benchmark for the industry.</p>
+                              </div>
+                          </div>
+                          <div class="accordion">
+                              <div class="title"><i class="caret down icon"></i>title here</div>
+                              <div class="content active">
+                                  <p>The last two years have been rough on Samsung,
+                                      which makes some of the most popular smartphones
+                                      in the world but hasn't managed lately to scoop up
+                                      the same profits as competitor Apple, whose
+                                      iPhones remain the benchmark for the industry.</p>
+                              </div>
+                          </div>
+                          <div class="accordion">
+                              <div class="title"><i class="caret down icon"></i>title here</div>
+                              <div class="content active">
+                                  <p>The last two years have been rough on Samsung,
+                                      which makes some of the most popular smartphones
+                                      in the world but hasn't managed lately to scoop up
+                                      the same profits as competitor Apple, whose
+                                      iPhones remain the benchmark for the industry.</p>
+                              </div>
+                          </div>
+                          <div class="accordion">
+                              <div class="title"><i class="caret down icon"></i>title here</div>
+                              <div class="content active">
+                                  <p>The last two years have been rough on Samsung,
+                                      which makes some of the most popular smartphones
+                                      in the world but hasn't managed lately to scoop up
+                                      the same profits as competitor Apple, whose
+                                      iPhones remain the benchmark for the industry.</p>
+                              </div>
+                          </div>
+                          <div class="accordion">
+                              <div class="title"><i class="caret down icon"></i>title here</div>
+                              <div class="content active">
+                                  <p>The last two years have been rough on Samsung,
+                                      which makes some of the most popular smartphones
+                                      in the world but hasn't managed lately to scoop up
+                                      the same profits as competitor Apple, whose
+                                      iPhones remain the benchmark for the industry.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tab-content" style="padding: 20px;">
+                          contents2
                       </div>
                   </div>
-                  <div class="tab" style="float: left; margin-left: 20px; min-width: 300px; height: 400px;">
-                      <div class="header">
-                          <div class="tab-item">tab1</div>
-                          <div class="tab-item">tab1</div>
-                          <div class="tab-item active">tab1</div>
-                      </div>
-                      <div class="content">
-                          <div class="tab-content active" style="padding: 20px;">
-                              contents1
-                          </div>
-                          <div class="tab-content" style="padding: 20px;">
-                              contents2
-                          </div>
-                      </div>
-                  </div>
-                  <div style="clear: both;"></div>
+              </div>
+              <div class="menu" style="float: left; margin-left: 20px;">
+                  <div class="item"><i class="toggle right icon"></i>item0</div>
+                  <div class="item">item1</div>
+                  <div class="item">item2</div>
+                  <div class="item"><i class="file text outline icon"></i>item3</div>
+                  <div class="divider"></div>
+                  <div class="item">item3</div>
+                  <div class="item">item3</div>
+              </div>
+              <div style="clear: both;"></div>
           </div>
       </div>
   </body>

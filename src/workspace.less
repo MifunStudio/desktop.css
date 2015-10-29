@@ -7,6 +7,33 @@ html, body {
     overflow: hidden;
     font-family: @fontFamily;
     font-size: 11px;
+    text-shadow: @textShadow;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-button {
+}
+::-webkit-scrollbar-track {
+    background: @sectionBgColor7;
+}
+::-webkit-scrollbar-track-piece {
+
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: @sectionBgColor4;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: @sectionBgColor3;
+}
+::-webkit-scrollbar-corner {
+    background: @sectionBgColor6;
+}
+::-webkit-resizer {
+
 }
 
 .workspace {
@@ -21,12 +48,12 @@ html, body {
     font-family: @fontFamily;
     font-size: 12px;
 
-    > .menus {
+    > .commands {
         padding: 0 0 0 10px;
         background: @sectionBgColor2;
         border-bottom: 1px solid @borderColor1;
 
-        > .menu {
+        > .item {
             display: inline-block;
             background: @sectionBgColor2;
             border-left: 1px solid @sectionBgColor2;
@@ -57,13 +84,17 @@ html, body {
             margin-left: 5px;
         }
 
+        > .label {
+            padding: 2px 6px 2px 6px;
+            .noselect;
+        }
+
         > .label:hover, > .label.active {
             cursor: pointer;
             background: @sectionBgColor3;
             border: 1px solid @borderColor0;
             color: @textColor2;
-            padding: 2px 5px 2px 5px;
-            border-radius: 1px;
+            border-radius: @borderRadius2;;
         }
     }
 
