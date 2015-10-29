@@ -3055,6 +3055,23 @@ input[type='radio'] {
 .tab > .content > .tab-content.active {
   display: block;
 }
+.accordion {
+  color: #d7d7d7;
+}
+.accordion > .title {
+  padding: 0;
+  margin: 0;
+  padding: 3px 0px 3px 0px;
+  cursor: pointer;
+}
+.accordion > .content {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+.accordion > .content.active {
+  display: block;
+}
 html,
 body {
   position: absolute;
@@ -3063,6 +3080,7 @@ body {
   overflow: hidden;
   font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 11px;
+  text-shadow: 0px 0px 1px #282828;
 }
 .workspace {
   position: relative;
