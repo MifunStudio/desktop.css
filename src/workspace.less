@@ -84,13 +84,17 @@ html, body {
             margin-left: 5px;
         }
 
+        > .label {
+            padding: 2px 6px 2px 6px;
+            .noselect;
+        }
+
         > .label:hover, > .label.active {
             cursor: pointer;
             background: @sectionBgColor3;
             border: 1px solid @borderColor0;
             color: @textColor2;
-            padding: 2px 5px 2px 5px;
-            border-radius: 1px;
+            border-radius: @borderRadius2;;
         }
     }
 

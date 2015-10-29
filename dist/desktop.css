@@ -361,6 +361,14 @@ td,
 th {
   padding: 0;
 }
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 /*******************************
     Icon from Semantic-UI
 *******************************/
@@ -2859,7 +2867,7 @@ i.icon.bed:before {
   border: 1px solid transparent;
   color: #b7b7b7;
   padding: 2px 5px 2px 5px;
-  min-width: 40px;
+  min-width: 24px;
   outline: none;
   text-shadow: 0px 0px 1px #282828;
   text-align: center;
@@ -2964,14 +2972,6 @@ input[type='range'] {
   box-shadow: none;
   height: 1px;
   vertical-align: middle;
-}
-.noselect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 .menu {
   box-shadow: 0 0 15px #282828;
@@ -3196,14 +3196,22 @@ body {
 .workspace > .toolbar > select {
   margin-left: 5px;
 }
+.workspace > .toolbar > .label {
+  padding: 2px 6px 2px 6px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .workspace > .toolbar > .label:hover,
 .workspace > .toolbar > .label.active {
   cursor: pointer;
   background: #464646;
   border: 1px solid #202020;
   color: #b7b7b7;
-  padding: 2px 5px 2px 5px;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 .workspace > .content {
   position: relative;
