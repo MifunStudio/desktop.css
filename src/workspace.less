@@ -55,6 +55,7 @@ html, body {
 
         > .item {
             display: inline-block;
+            position: relative;
             background: @sectionBgColor2;
             border-left: 1px solid @sectionBgColor2;
             border-right: 1px solid @sectionBgColor2;
@@ -62,12 +63,22 @@ html, body {
             color: @textColor2;
             padding: 3px 12px 3px 12px;
 
-            &:hover {
+            &:hover, &.active {
                 color: @textColor1;
                 background: @sectionBgColor1;
                 cursor: pointer;
                 border-left: 1px solid @borderColor0;
                 border-right: 1px solid @borderColor0;
+            }
+
+            &.active > .menu {
+                display: block;
+            }
+
+            > .menu {
+                display: none;
+                left: 0;
+                top: 100%;
             }
         }
     }
