@@ -11,7 +11,7 @@ gulp
 
 and then open [desktop.html](#)(click this link see demo.)
 
-## Themes
+## Color Themes
 
 * Photoshop
 
