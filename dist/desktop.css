@@ -3085,6 +3085,16 @@ input[type='range'] {
   left: 10px;
   margin-top: 1px;
 }
+.menu > .item.disabled {
+  color: #777777;
+  cursor: default;
+  text-shadow: none;
+}
+.menu > .item.disabled:hover,
+.menu > .item.disabled:active {
+  color: #777777;
+  background: transparent;
+}
 .menu > .divider {
   margin: 3px 0px 3px 0px;
   border-top: 1px solid #4a4a4a;

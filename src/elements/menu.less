@@ -32,6 +32,17 @@
             left: 10px;
             margin-top: 1px;
         }
+
+        &.disabled {
+            color: @textColor4;
+            cursor: default;
+            text-shadow: none;
+        }
+
+        &.disabled:hover, &.disabled:active {
+            color: @textColor4;
+            background: transparent
+        }
     }
 
     > .divider {
