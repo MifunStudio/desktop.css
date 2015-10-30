@@ -2865,7 +2865,7 @@ i.icon.bed:before {
   margin: 0;
   background: transparent;
   border: 1px solid transparent;
-  color: #b7b7b7;
+  color: #d7d7d7;
   padding: 2px 5px 2px 5px;
   min-width: 24px;
   outline: none;
@@ -2893,6 +2893,25 @@ button:hover {
 .button:active,
 button:active {
   background: #535353;
+}
+.button-group {
+  display: inline-flex;
+  flex-direction: row;
+}
+.button-group > .button,
+.button-group > button {
+  border-radius: 0 !important;
+  margin-right: -1px;
+}
+.button-group > .button:first-child,
+.button-group > button:first-child {
+  border-top-left-radius: 2px !important;
+  border-bottom-left-radius: 2px !important;
+}
+.button-group > .button:last-child,
+.button-group > button:last-child {
+  border-top-right-radius: 2px !important;
+  border-bottom-right-radius: 2px !important;
 }
 .select,
 select {
@@ -3281,12 +3300,19 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-.workspace > .toolbar > .label:hover,
 .workspace > .toolbar > .label.active {
   cursor: pointer;
   background: #464646;
   border: 1px solid #202020;
-  color: #b7b7b7;
+  color: #fffde6;
+  border-radius: 2px;
+}
+.workspace > .toolbar > .label:hover {
+  cursor: pointer;
+  background: #606060;
+  background: -webkit-gradient(linear, center top, center bottom, from(#747474), to(#606060));
+  border: 1px solid #282828;
+  color: #fffde6;
   border-radius: 2px;
 }
 .workspace > .content {

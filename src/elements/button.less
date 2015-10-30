@@ -21,3 +21,24 @@
         background: @sectionBgColor4;
     }
 }
+
+.button-group {
+    display: inline-flex;
+    flex-direction: row;
+
+    > .button, > button {
+        border-radius: 0 !important;
+        margin-right: -1px;
+
+        &:first-child {
+            border-top-left-radius: @borderRadius2 !important;
+            border-bottom-left-radius: @borderRadius2 !important;
+        }
+
+        &:last-child {
+            border-top-right-radius: @borderRadius2 !important;
+            border-bottom-right-radius: @borderRadius2 !important;
+        }
+    }
+
+}
