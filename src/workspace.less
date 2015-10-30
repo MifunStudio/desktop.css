@@ -89,19 +89,19 @@ html, body {
             .noselect;
         }
 
-        > .label.active {
-            cursor: pointer;
-            background: @sectionBgColor3;
-            border: 1px solid @borderColor0;
-            color: @textColor1;
-            border-radius: @borderRadius2;;
-        }
-
         > .label:hover {
             cursor: pointer;
             background: @sectionBgColor5;
             background: @sectionGradientBgColor2;
             border: 1px solid @borderColor1;
+            color: @textColor1;
+            border-radius: @borderRadius2;;
+        }
+
+        > .label:active, > .label.active {
+            cursor: pointer;
+            background: @sectionBgColor3;
+            border: 1px solid @borderColor0;
             color: @textColor1;
             border-radius: @borderRadius2;;
         }

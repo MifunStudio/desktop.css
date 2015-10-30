@@ -2888,11 +2888,14 @@ button {
 }
 .button:hover,
 button:hover {
-  color: #ffffff;
+  color: #fffde6;
 }
 .button:active,
-button:active {
+button:active,
+.button.active,
+button.active {
   background: #535353;
+  color: #fffde6;
 }
 .button-group {
   display: inline-flex;
@@ -2929,11 +2932,14 @@ select {
 }
 .select:hover,
 select:hover {
-  color: #ffffff;
+  color: #fffde6;
 }
 .select:active,
-select:active {
+select:active,
+.select.active,
+select.active {
   background: #535353;
+  color: #fffde6;
 }
 .input,
 input {
@@ -2991,6 +2997,56 @@ input[type='range'] {
   box-shadow: none;
   height: 1px;
   vertical-align: middle;
+}
+.progress {
+  display: inline-block;
+  background: #343434;
+  height: 10px;
+  border: 1px solid #282828;
+  border-radius: 3px;
+  color: #b7b7b7;
+  text-shadow: 0px 0px 1px #282828;
+  box-shadow: #282828 0px 0px 2px inset;
+}
+.progress:hover {
+  color: #d7d7d7;
+}
+.progress .value {
+  box-sizing: border-box;
+  padding: 0 3px 0 3px;
+  background: #b7b7b7;
+  background: -webkit-gradient(linear, center top, center bottom, from(#747474), to(#606060));
+  height: 10px;
+  border-radius: 3px;
+  text-align: right;
+  font-size: 11px;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.progress.small {
+  height: 6px;
+}
+.progress.small .value {
+  height: 6px;
+}
+.progress.large {
+  height: 14px;
+}
+.progress.large .value {
+  height: 14px;
+  line-height: 14px;
+}
+.progress.extra {
+  height: 18px;
+}
+.progress.extra .value {
+  height: 18px;
+  line-height: 18px;
 }
 .menu {
   position: absolute;
@@ -3302,18 +3358,19 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-.workspace > .toolbar > .label.active {
-  cursor: pointer;
-  background: #464646;
-  border: 1px solid #202020;
-  color: #fffde6;
-  border-radius: 2px;
-}
 .workspace > .toolbar > .label:hover {
   cursor: pointer;
   background: #606060;
   background: -webkit-gradient(linear, center top, center bottom, from(#747474), to(#606060));
   border: 1px solid #282828;
+  color: #fffde6;
+  border-radius: 2px;
+}
+.workspace > .toolbar > .label:active,
+.workspace > .toolbar > .label.active {
+  cursor: pointer;
+  background: #464646;
+  border: 1px solid #202020;
   color: #fffde6;
   border-radius: 2px;
 }

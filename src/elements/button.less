@@ -14,11 +14,12 @@
     text-shadow: @textShadow;
 
     &:hover {
-        color: @textColor0;
+        color: @textColor1;
     }
 
-    &:active {
+    &:active, &.active {
         background: @sectionBgColor4;
+        color: @textColor1;
     }
 }
 
