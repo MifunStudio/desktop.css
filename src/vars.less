@@ -8,7 +8,7 @@
 
 @fontFamily: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-@sectionBgColor0: #202020;
+@sectionBgColor0: #282828;
 @sectionBgColor1: @baseBgColor;
 @sectionBgColor2: #343434;
 @sectionBgColor2_5: #3a3a3a;
@@ -21,7 +21,7 @@
 @sectionGradientBgColor: -webkit-gradient(linear,center top,center bottom,from(#3b3b3b), to(#373737));
 @sectionGradientBgColor1: @sectionGradientBgColor;
 @sectionGradientBgColor2: -webkit-gradient(linear,center top,center bottom,from(#747474), to(#606060));
-@sectionGradientBgColor3: -webkit-gradient(linear,center top,center bottom,from(#696969), to(@sectionBgColor5));
+@sectionGradientBgColor3: -webkit-gradient(linear,center top,center bottom,from(@sectionBgColor5), to(@sectionBgColor4));
 
 @baseBorderColor: @baseBgColor;
 @borderColor0: #202020;
@@ -55,4 +55,9 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.section {
+    border: 1px solid @borderColor1;
+    background: @sectionBgColor3;
 }
