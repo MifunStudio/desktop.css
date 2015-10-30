@@ -2993,9 +2993,11 @@ input[type='range'] {
   vertical-align: middle;
 }
 .menu {
-  box-shadow: 0 4px 20px #343434;
+  position: absolute;
+  box-shadow: 0 4px 20px #464646;
   border: 1px solid #383838;
-  border-radius: 2px;
+  border-top: 1px solid #707070;
+  border-left: 1px solid #707070;
   min-width: 150px;
   padding: 5px 0px 5px 0px;
   background: #606060;
