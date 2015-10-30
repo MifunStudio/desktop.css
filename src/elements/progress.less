@@ -1,0 +1,46 @@
+@import "../vars";
+
+.progress {
+    display: inline-block;
+    background: @sectionBgColor2;
+    height: 10px;
+    border: 1px solid @borderColor1;
+    border-radius: @borderRadius3;
+    color: @textColor2;
+    text-shadow: @textShadow;
+    box-shadow: @borderColor1 0px 0px 2px inset;
+
+    &:hover {
+        color: @textColor1_5;
+    }
+
+    .value {
+        box-sizing: border-box;
+        padding: 0 3px 0 3px;
+        background: @textColor2;
+        background: @sectionGradientBgColor2;
+        height: 10px;
+        border-radius: @borderRadius3;
+        text-align: right;
+        font-size: @smallFontSize;
+        cursor: default;
+        transition: width .2s ease;
+
+        .noselect;
+    }
+}
+
+.progress.small {
+    height: 6px;
+    .value { height: 6px; }
+}
+
+.progress.large {
+    height: 14px;
+    .value { height: 14px; line-height: 14px; }
+}
+
+.progress.extra {
+    height: 18px;
+    .value { height: 18px; line-height: 18px; }
+}

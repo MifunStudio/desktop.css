@@ -1,7 +1,9 @@
 .menu {
-    box-shadow: 0 4px 20px @sectionBgColor2;
+    position: absolute;
+    box-shadow: 0 4px 20px @sectionBgColor3;
     border: 1px solid @borderColor2;
-    border-radius: @borderRadius2;
+    border-top: 1px solid @borderColor4;
+    border-left: 1px solid @borderColor4;
     min-width: 150px;
     padding: 5px 0px 5px 0px;
     background: @sectionBgColor5;
@@ -15,17 +17,31 @@
         padding: 5px 7px 5px 32px;
 
         &:hover {
-            background: @sectionBgColor4;
+            color: @textColor1;
+            background: @selectionBgColor;
+            cursor: default;
         }
 
         &:active {
-            background: @sectionBgColor3;
+            color: @textColor1;
+            background: @activeBgColor;
         }
 
         .icon {
             position: absolute;
             left: 10px;
             margin-top: 1px;
+        }
+
+        &.disabled {
+            color: @textColor4;
+            cursor: default;
+            text-shadow: none;
+        }
+
+        &.disabled:hover, &.disabled:active {
+            color: @textColor4;
+            background: transparent
         }
     }
 

@@ -17,6 +17,7 @@
           <div class="toolbar">
               <button>Basic Button</button>
               <button>Mini</button>
+              <button class="active">Actived</button>
               <button>中文</button>
               <button><i class="zoom icon"></i></button>
               <select>
@@ -128,14 +129,87 @@
                       </div>
                   </div>
               </div>
-              <div class="menu" style="float: left; margin-left: 20px;">
+              <div class="menu" style="float: left; margin-left: 20px; position: relative;">
                   <div class="item"><i class="toggle right icon"></i>item0</div>
                   <div class="item">item1</div>
-                  <div class="item">item2</div>
+                  <div class="item disabled">item2 disabled</div>
                   <div class="item"><i class="file text outline icon"></i>item3</div>
                   <div class="divider"></div>
                   <div class="item">item3</div>
                   <div class="item">item3</div>
+              </div>
+              <div class="tree" style="float: left; margin-left: 20px; border: 1px solid #333; min-width: 200px; min-height: 400px;">
+                  <div class="tree-node">
+                    <div class="content">
+                      <i class="caret down icon"></i><span>item0</span>
+                    </div>
+                    <div class="list children">
+                        <div class="tree-node">
+                          <div class="content">
+                            <i class="caret right icon"></i><span>item1</span>
+                          </div>
+                          <div class="list children">
+
+                          </div>
+                        </div>
+                        <div class="tree-node selected">
+                          <div class="content">
+                            <i class="caret down icon"></i><span>item1</span>
+                          </div>
+                          <div class="list children">
+                              <div class="tree-node">
+                                <div class="content">
+                                  <i class="caret right icon"></i><span>item1</span>
+                                </div>
+                                <div class="list children">
+
+                                </div>
+                              </div>
+                              <div class="tree-node">
+                                <div class="content">
+                                  <i class="caret right icon"></i><span>item1</span>
+                                </div>
+                                <div class="list children">
+
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="tree-node">
+                          <div class="content">
+                            <i class="caret right icon"></i><span>item1</span>
+                          </div>
+                          <div class="list children">
+
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="advance" style="padding: 20px; float: left; margin-left: 20px; border: 1px solid #333; min-width: 200px; min-height: 400px; box-sizing: border-box;">
+                  <div class="button-group">
+                      <button><i class="step backward icon"></i></button>
+                      <button><i class="play icon"></i></button>
+                      <button><i class="pause icon"></i></button>
+                      <button><i class="step forward icon"></i></button>
+                  </div>
+                  <div style="padding: 10px;">
+                      <div class="progress small" style="width: 100px;">
+                          <div class="value" style="width: 31%;"></div>
+                      </div>
+                      <br/><br/>
+                      <div class="progress" style="width: 100px;">
+                          <div class="value" style="width: 31%;"></div>
+                      </div>
+                      <br/><br/>
+                      <div class="progress large" style="width: 100px;">
+                          <div class="value" style="width: 31%;">31%</div>
+                      </div>
+                      <br/><br/>
+                      <div class="progress extra" style="width: 100px;">
+                          <div class="value" style="width: 31%;">31%</div>
+                      </div>
+                  </div>
               </div>
               <div style="clear: both;"></div>
           </div>

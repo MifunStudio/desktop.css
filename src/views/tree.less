@@ -1,0 +1,85 @@
+@import "../vars";
+
+@tree-operation-color: @textColor3;
+
+.tree {
+    position: relative;
+    color: @textColor1_5;
+
+    .tree-node {
+        margin: 0 !important;
+        padding: 0 0 0 12px;
+
+        &.drag-over-top > .content::before {
+            border-top: 1px solid @tree-operation-color;
+        }
+        &.drag-over-middle > .content::before {
+            border: 1px solid @tree-operation-color;
+        }
+        &.drag-over-bottom > .content::before {
+            border-bottom: 1px solid @tree-operation-color;
+        }
+
+        > .content {
+            position: relative;
+            padding: 2px 0px 2px 0px;
+            z-index: 10;
+            cursor: default;
+            .noselect;
+
+            .icon {
+                position: relative;
+                height: 1.18em;
+                z-index: 20;
+                font-size: 0.5em;
+            }
+
+            &::before {
+                position: absolute;
+                right: 0;
+                left: 0;
+                box-sizing: border-box;
+                width: 100%;
+                height: 17px;
+                content: '';
+                z-index: 0;
+                background: transparent;
+            }
+        }
+
+        > .children {
+            padding: 0;
+        }
+
+        &.collapsed > .children {
+            display: none;
+        }
+
+        &::before {
+            position: absolute;
+            right: 0;
+            left: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 17px;
+            content: '';
+            z-index: 0;
+            background: transparent;
+        }
+
+        &.selected::before {
+            background-color: @selectionBgColor;
+        }
+
+        &.selected > .content {
+            .icon, span {
+                color: @textColor1;
+            }
+        }
+
+    }
+
+    > .tree-node {
+        padding-left: 0px !important;
+    }
+}

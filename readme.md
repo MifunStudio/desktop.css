@@ -9,9 +9,9 @@ npm install
 gulp
 ```
 
-and then open [desktop.html](#)(click this link see demo.)
+and then open [desktop.html](http://mifunstudio.github.io/desktop.css/desktop.html)(click this link see demo.)
 
-## Themes
+## Color Themes
 
 * Photoshop
 
