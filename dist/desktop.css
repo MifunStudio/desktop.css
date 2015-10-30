@@ -2994,10 +2994,13 @@ input[type='range'] {
   padding: 5px 7px 5px 32px;
 }
 .menu > .item:hover {
-  background: #535353;
+  color: #fffde6;
+  background: #778fac;
+  cursor: default;
 }
 .menu > .item:active {
-  background: #464646;
+  color: #fffde6;
+  background: #6782a2;
 }
 .menu > .item .icon {
   position: absolute;
@@ -3124,6 +3127,79 @@ input[type='range'] {
 }
 .accordion > .content.active {
   display: block;
+}
+.tree {
+  position: relative;
+  color: #d7d7d7;
+}
+.tree .tree-node {
+  margin: 0 !important;
+  padding: 0 0 0 12px;
+}
+.tree .tree-node.drag-over-top > .content::before {
+  border-top: 1px solid #9a9a9a;
+}
+.tree .tree-node.drag-over-middle > .content::before {
+  border: 1px solid #9a9a9a;
+}
+.tree .tree-node.drag-over-bottom > .content::before {
+  border-bottom: 1px solid #9a9a9a;
+}
+.tree .tree-node > .content {
+  position: relative;
+  padding: 2px 0px 2px 0px;
+  z-index: 10;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tree .tree-node > .content .icon {
+  position: relative;
+  height: 1.18em;
+  z-index: 20;
+  font-size: 0.5em;
+}
+.tree .tree-node > .content::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 17px;
+  content: '';
+  z-index: 0;
+  background: transparent;
+}
+.tree .tree-node > .children {
+  padding: 0;
+}
+.tree .tree-node.collapsed > .children {
+  display: none;
+}
+.tree .tree-node::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 17px;
+  content: '';
+  z-index: 0;
+  background: transparent;
+}
+.tree .tree-node.selected::before {
+  background-color: #778fac;
+}
+.tree .tree-node.selected > .content .icon,
+.tree .tree-node.selected > .content span {
+  color: #fffde6;
+}
+.tree > .tree-node {
+  padding-left: 0px !important;
 }
 html,
 body {
